@@ -1,8 +1,6 @@
 <?php
 session_start();
 include __DIR__ . '/includes/html-start.php';
-
-$URL = '/BackEndDocs/PHP_Es.1_CRUD database';
 ?>
 
 <div class="container mt-1">
@@ -28,7 +26,7 @@ $URL = '/BackEndDocs/PHP_Es.1_CRUD database';
                 <div>
                     <h1 class="text-light fw-lighter">.New User</h1>
                 </div>
-                <div><a href="<?= $URL ?>"><button type="button" class="btn btn-outline-light"><i class="bi bi-house-door-fill"></i></button></a>
+                <div><a href="./index.php"><button type="button" class="btn btn-outline-light"><i class="bi bi-house-door-fill"></i></button></a>
                 </div>
             </div>
             <!-- end main title -->

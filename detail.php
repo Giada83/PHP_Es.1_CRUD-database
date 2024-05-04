@@ -3,8 +3,6 @@ session_start();
 include __DIR__ . '/includes/conn.php';
 include __DIR__ . '/includes/html-start.php';
 
-$URL = '/BackEndDocs/PHP_Es.1_CRUD database';
-
 // fetch data from id
 $statement = $db_connection->prepare('SELECT * FROM user WHERE id = ?');
 $statement->execute([$_GET["id"]]);
@@ -19,7 +17,7 @@ $row = $statement->fetch();
                 <div>
                     <h1 class="text-light fw-lighter">.User Details</h1>
                 </div>
-                <div><a href="<?= $URL ?>/index.php"><button type="button" class="btn btn-outline-light"><i class="bi bi-house-door-fill"></i></button></a>
+                <div><a href="./index.php"><button type="button" class="btn btn-outline-light"><i class="bi bi-house-door-fill"></i></button></a>
                 </div>
             </div>
 

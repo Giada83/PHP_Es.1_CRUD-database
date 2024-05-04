@@ -2,8 +2,6 @@
 session_start();
 include __DIR__ . '/includes/conn.php';
 include __DIR__ . '/includes/html-start.php';
-
-$URL = '/BackEndDocs/PHP_Es.1_CRUD database';
 ?>
 
 <div class="container mt-2">
@@ -29,7 +27,7 @@ $URL = '/BackEndDocs/PHP_Es.1_CRUD database';
                 <div>
                     <h1 class="text-light fw-lighter m-0">.User Database</h1>
                 </div>
-                <div><a href="<?= $URL ?>/insert_data.php"><button type="button" class="btn btn-outline-light"><i class="bi bi-plus-circle-fill"></i> Add User</button></a>
+                <div><a href="./insert_data.php"><button type="button" class="btn btn-outline-light"><i class="bi bi-plus-circle-fill"></i> Add User</button></a>
                 </div>
             </div>
             <!-- end title  -->
@@ -58,7 +56,7 @@ $URL = '/BackEndDocs/PHP_Es.1_CRUD database';
 
                                         <!-- DETAIL BUTTON -->
                                         <form action="code.php" method="GET">
-                                            <a href="<?= $URL ?>/detail.php?id=<?= $row['id'] ?>">
+                                            <a href="./detail.php?id=<?= $row['id'] ?>">
                                                 <button class='btn btn-success me-1' type="button">
                                                     <i class="bi bi-clipboard2-data"></i>
                                                 </button>
@@ -68,7 +66,7 @@ $URL = '/BackEndDocs/PHP_Es.1_CRUD database';
 
                                         <!-- EDIT BUTTON -->
                                         <form>
-                                            <a href="<?= $URL ?>/edit.php?id=<?= $row['id'] ?>">
+                                            <a href="./edit.php?id=<?= $row['id'] ?>">
                                                 <button class='btn btn-primary me-1' type="button">
                                                     <i class='bi bi-pencil'></i>
                                                 </button>
